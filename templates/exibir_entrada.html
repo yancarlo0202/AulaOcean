@@ -1,1 +1,10 @@
-<h1>Teste</h1>
+{% extend 'layout.hmtl' %}
+
+{% block %}
+{% for entrada in entradas %}
+    <h2>{{ entrada.titulo }}</h2>
+    <p>{{ entrada.texto }}</p>
+{% else %}
+    <i>Não tem nada</i>    
+(% endfor %)    
+{% endblock %}

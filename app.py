@@ -10,7 +10,7 @@ post = [
     {
         "título": "Minha primeira postagem",
         "texto": "teste"
-    }
+    },
 
     {
         "título": "Minha segunda postagem",
@@ -23,7 +23,7 @@ app = Flask("meu app")
 @app.route('/')
 def exibir_entradas():
     entradas = post
-    return render_template('exibir_entrada.hmtl')
+    return render_template('exibir_entrada.hmtl', entradas=entradas)
 
 
 #@app.route('/novo')
