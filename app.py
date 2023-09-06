@@ -26,6 +26,6 @@ def exibir_entradas():
     return render_template('exibir_entrada.hmtl', entradas=entradas)
 
 
-#@app.route('/novo')
-#def novo():
-#    return "<h1>Nova página</h1>"
+@app.route('/login')
+def login():
+    returnrender_template('login.html')
