@@ -18,7 +18,7 @@ post = [
     }
 ]
 
-app = Flask("meu app")
+app = Flask(__name__)
 
 @app.route('/')
 def exibir_entradas():
