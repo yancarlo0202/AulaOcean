@@ -11,14 +11,11 @@ post = [
         "título": "Minha primeira postagem",
         "texto": "teste"
     },
-
     {
         "título": "Minha segunda postagem",
         "texto": "teste"
     }
 ]
-
-app = Flask(__name__)
 
 @app.route('/')
 def exibir_entradas():
